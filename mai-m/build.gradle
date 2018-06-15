@@ -1,0 +1,9 @@
+apply plugin: 'war'
+
+dependencies {
+    compile(
+            project(':mai-common'),
+            libraries.'shiro-spring'
+    )
+    providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
+}

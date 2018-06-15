@@ -1,0 +1,8 @@
+apply plugin: 'war'
+
+dependencies {
+	compile(
+		project(':mai-common')
+    )
+    providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
+}
